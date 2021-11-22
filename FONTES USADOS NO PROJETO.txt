@@ -1,0 +1,128 @@
+result = '<div class="alert alert-dismissible alert-warning">';
+      result += '<button type="button" class="close" data-dismiss="alert">x</button>';
+      result += '<h4>Procesando...</h4>';
+      result += '<p><strong>Estamos Tentando Logar....</strong></p>';
+      result += '</div>';
+
+
+
+result = '<div class="alert alert-dismissible alert-success">';
+        result += '<h4>Conectado!</h4>';
+        result += '<p><strong>Estamos te redirecionando...</strong></p>';
+        result += '</div>';
+
+
+
+
+function Encrypt($string) {
+  $long = strlen($string);
+  $str = '';
+  for($x = 0; $x < $long; $x++) {
+    $str .= ($x % 2) != 0 ? md5($string[$x]) : $x;
+  }
+  return md5($str);
+}
+
+
+
+
+echo '<div class="alert alert-dismissible alert-danger">
+    <button type="button" class="close" data-dismiss="alert">x</button>
+    <strong>ERRO:</strong> Dados Incorretos.
+  </div>';
+
+
+  echo '<div class="alert alert-dismissible alert-danger">
+  <button type="button" class="close" data-dismiss="alert">x</button>
+  <strong>ERRO:</strong> Preencha os Dados.
+</div>';
+
+
+
+
+echo '<a class="mbr-buttons__link btn text-white" href="">'. strtoupper('NOME DO USUÁRIO') .'</a></li><li class="mbr-navbar__item">
+                            <div class="mbr-navbar__column"><ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-inverse mbr-buttons--active"><li class="mbr-navbar__item"><a class="mbr-buttons__btn btn btn-danger" href="">CONTA</a></li></ul></div>
+                            <div class="mbr-navbar__column"><ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-inverse mbr-buttons--active"><li class="mbr-navbar__item"><a class="mbr-buttons__btn btn btn-primary" href="">SAIR</a></li></ul></div>
+                          ';
+
+
+
+if($_POST['session']) { ini_set('session.cookie_lifetime', time() + (60*60*24)); }
+
+
+
+
+echo modificado
+
+ echo '<a class="mbr-buttons__link btn text-white" href="?view=perfil&id='.$_SESSION['app_id'].'">'. strtoupper($users[$_SESSION['app_id']]['user']) .'</a></li><li class="mbr-navbar__item">
+                            <div class="mbr-navbar__column"><ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-inverse mbr-buttons--active"><li class="mbr-navbar__item"><a class="mbr-buttons__btn btn btn-danger" href="?view=conta">CONTA</a></li></ul></div>
+                            <div class="mbr-navbar__column"><ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-inverse mbr-buttons--active"><li class="mbr-navbar__item"><a class="mbr-buttons__btn btn btn-primary" href="?view=logout">SAIR</a></li></ul></div>
+                          ';
+
+
+
+
+
+ $HTML = '<div class="alert alert-dismissible alert-danger">
+    <button type="button" class="close" data-dismiss="alert">x</button>
+    <strong>ERRO:</strong> O usuário já existe.
+  </div>';
+  } else {
+    $HTML = '<div class="alert alert-dismissible alert-danger">
+    <button type="button" class="close" data-dismiss="alert">x</button>
+    <strong>ERRO:</strong> O email inserido já existe.
+  </div>';
+
+
+
+
+
+$HTML = '
+  <html>
+  <body style="background: #FFFFFF;font-family: Verdana; font-size: 14px;color:#1c1b1b;">
+  <div style="">
+      <h2>Olá '.$user.'</h2>
+      <p style="font-size:17px;">Obrigado por se registrar '. APP_TITLE .'.</p>
+    <p>Ative sua conta para poder logar no site.</p>
+    <p style="padding:15px;background-color:#ECF8FF;">
+        Para ativar sua conta <a style="font-weight:bold;color: #2BA6CB;" href="'.$link.'" target="_blank">clique aqui &raquo;</a>
+    </p>
+      <p style="font-size: 9px;">&copy; '. date('Y',time()) .' '.APP_TITLE.'. Todos os direitos reservados.</p>
+  </div>
+  </body>
+  </html>
+  ';
+
+      return $HTML;
+
+
+
+
+<section class="mbr-section mbr-after-navbar" id="content1-10">
+    <div class="mbr-section__container container mbr-section__container--isolated">
+        <div class="row" style="min-height: 270px;">
+            <div class="alert alert-dismissible alert-info">
+              <strong>Informacões</strong> para visualizar esta página deve estar logado <a data-toggle="modal" data-target="#Login">Inicir Sessão</a>
+            </div>
+            <h3><?php echo APP_TITLE ?></h3>
+        </div>
+    </div>
+</section>
+
+
+
+NA SECTION DA INDEX
+
+ <?php
+  if(isset($_GET['success'])) {
+    echo '<div class="alert alert-dismissible alert-success">
+      <strong>Ativado!</strong> Usuário ativado corretamente.
+    </div>';
+  }
+
+   if(isset($_GET['error'])) {
+    echo '<div class="alert alert-dismissible alert-danger">
+      <strong>Erro!</strong></strong>Não se pode ativar o usuário.
+    </div>';
+  } 
+  ?>
